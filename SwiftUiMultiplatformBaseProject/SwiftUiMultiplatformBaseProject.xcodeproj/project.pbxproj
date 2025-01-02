@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1EABA9522D2684FB00F0E2E9 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 1EABA9512D2684FB00F0E2E9 /* SwiftyJSON */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1EBB551F2D2643F500CC2736 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EABA9522D2684FB00F0E2E9 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = SwiftUiMultiplatformBaseProject;
 			packageProductDependencies = (
+				1EABA9512D2684FB00F0E2E9 /* SwiftyJSON */,
 			);
 			productName = SwiftUiMultiplatformBaseProject;
 			productReference = 1EBB550D2D2643F300CC2736 /* SwiftUiMultiplatformBaseProject.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 1EBB55042D2643F300CC2736;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1EABA9502D2684AA00F0E2E9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1EBB550E2D2643F300CC2736 /* Products */;
 			projectDirPath = "";
@@ -591,6 +600,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1EABA9502D2684AA00F0E2E9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1EABA9512D2684FB00F0E2E9 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EABA9502D2684AA00F0E2E9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1EBB55052D2643F300CC2736 /* Project object */;
 }
