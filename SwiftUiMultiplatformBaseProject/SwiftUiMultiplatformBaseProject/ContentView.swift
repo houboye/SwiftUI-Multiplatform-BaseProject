@@ -7,16 +7,26 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
+struct ContentView:View{
+    @State private var currentSelected:Tab = .location
+    
+    var body:some View{
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            switch currentSelected {
+            case .home:
+                BgView(content: HomeView())
+            case .location:
+                BgView(content: LocationView())
+            case .collect:
+                BgView(content: CollectView())
+            case .mine:
+                BgView(content: MineView())
+            }
+            
+            tabbar(currentSelected:$currentSelected)
         }
-        .padding()
     }
+    
 }
 
 #Preview {
